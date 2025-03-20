@@ -3,26 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box-Sizing</title>
+    <title>UI</title>
     <!-- <link rel="stylesheet" href="./style.css"> -->
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <!-- <h1>With box-sizing</h1>
-    <div class="div1">Both divs are the same size now!</div>
-    <br>
-    <div class="div2">Hooray!</div> -->
+<body class="bg-gray-900">
+        <nav class="flex justify-between items-center text-1xl text-white  px-10 py-5 md:px-20">
+            <div>
+                <h1 class="font-bold text-3xl">LOGO</h1>
+            </div>
+            <div>
+                <a href="#" class="p-2">Solution</a>
+                <a href="#" class="p-2">Pricing</a>
+                <a href="#" class="p-2">About</a>
+            </div>
+            <div>
+                <button class="rounded-full bg-gray-400 px-3 py-2">
+                Sign up
+                <span class="text-lg">→</span>
+            </button>
+            </div>
+        </nav>
 
-    <section class="bg-red-500  gap-10 flex flex-wrap text-3xl">
-        <div class="text-white">
-            <p>This is Div 1</p>
-        </div>
-        <div class="text-white">
-            <p>This is Div 2</p>
-        </div>
-        <div class="text-white">
-            <p>This is Div 3</p>
-        </div>
-    </section>
+
+        <section class="relative m-3 h-96 text-white bg-blue-800 rounded-xl">
+            <img src="./img-1.jpg"  class="absolute rounded-lg w-full h-full object-cover">
+        
+            <div class="flex flex-col justify-center h-full">
+                <h2 class="text-3xl font-serif text-center sm:text-3xl md:text-4xl lg:text-5xl font-bold relative">
+                    Creating a Website Layout with<br> 
+                <span class="text-yellow-400 underline ">Tailwind CSS</span> in 
+                    <span class="text-yellow-400 underline">5 Min</span>
+                </h2>
+            </div>
+            <div class="absolute bottom-20 left-56">
+                <button class="rounded-full bg-gray-400 px-3 py-2 relative">
+                    Sign up
+                    <span class="text-lg">→</span>
+                </button>
+            </div>
+            
+        </section>
 </body>
 </html>
